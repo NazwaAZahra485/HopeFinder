@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "789561537885",
+    "project_id": "kp-hopefinder",
+    "storage_bucket": "kp-hopefinder.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789561537885:android:0bab9069f2a1623410e4b4",
+        "android_client_info": {
+          "package_name": "com.nazwa.hopefinder"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNJGFA92S_I9pgJPm-_8aLPdvKZY8IQYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789561537885:android:9984ed49e748a5d410e4b4",
+        "android_client_info": {
+          "package_name": "com.nazwa.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNJGFA92S_I9pgJPm-_8aLPdvKZY8IQYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

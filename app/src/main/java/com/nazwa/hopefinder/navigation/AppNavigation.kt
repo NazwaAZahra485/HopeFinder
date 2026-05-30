@@ -4,32 +4,31 @@ import androidx.compose.runtime.Composable
 import androidx.lifecycle.viewmodel.compose.viewModel
 import androidx.navigation.NavHost
 import androidx.navigation.compose.rememberNavController
-import com.nazwa.hopefinder.ui.pages.HomeSosScreen
-//import com.nazwa.hopefinder.viewmodel.AuthViewModel
-import com.nazwa.hopefinder.viewmodel.SosViewModel
+import com.nazwa.hopefinder.ui.pages.HomeScreen
+import com.nazwa.hopefinder.ui.pages.BookletScreen
+import com.nazwa.hopefinder.ui.pages.NotificationScreen
+import com.nazwa.hopefinder.viewmodel.BookletViewModel
+import com.nazwa.hopefinder.viewmodel.HomeViewModel
+import com.nazwa.hopefinder.viewmodel.NotificationViewModel
 
-// TODO: buka booklet, help, map, profile, harus login using authViewModel
+// TODO: buka booklet, home, notification
 
 @Composable
-fun AppNavigation(sosViewModel: SosViewModel){
+fun AppNavigation(){
     val navController = rememberNavController()
-    val sosViewModel: SosViewModel = viewModel()
+    val homeViewModel: HomeViewModel = viewModel()
+    val bookletViewModel: BookletViewModel = viewModel()
+    val notificationViewModel: NotificationViewModel = viewModel()
 
     NavHost(navController = navController, startDestination = Route.HOME){
         composable(Route.HOME){
-            HomeSosScreen(sosViewModel, navController)
-        }
-        composable(Route.HELP){
-            HelpScreen(navController)
+            HomeScreen(homeViewModel, navController)
         }
         composable(Route.BOOKLET){
-            BookletScreen(navController)
+            BookletScreen(bookletViewModel, navController)
         }
-        composable(Route.MAP){
-            MapScreen(navController)
-        }
-        composable(Route.PROFILE){
-            ProfileScreen(navController)
+        composable(Route.NOTIFICATION){
+            NotificationScreen(notificationViewModel, navController)
         }
     }
 }

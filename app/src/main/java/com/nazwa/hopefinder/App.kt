@@ -1,12 +1,12 @@
 package com.nazwa.hopefinder
 
 import androidx.compose.runtime.Composable
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.nazwa.hopefinder.navigation.AppNavigation
-import com.nazwa.hopefinder.viewmodel.SosViewModel
+import com.nazwa.hopefinder.viewmodel.HomeViewModel
 
 @Composable
 fun App(){
-    val sosViewModel: SosViewModel = viewModel()
-    AppNavigation(sosViewModel)
+    val homeViewModel : HomeViewModel = viewModel()
+    AppNavigation(homeViewModel)
 }

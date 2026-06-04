@@ -1,8 +1,6 @@
 package com.nazwa.hopefinder.viewmodel
 
 import androidx.lifecycle.ViewModel
-import com.nazwa.hopefinder.entity.GempaBumi
-import com.nazwa.hopefinder.repository.EarthquakeRepository
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.asStateFlow
